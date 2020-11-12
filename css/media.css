@@ -1,0 +1,41 @@
+
+/* Media Queries */
+
+/* Tablet and smaller */
+@media(max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-articles__submain {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-articles__recent-box {
+        justify-content: start;
+    }
+
+    /* navigation */
+    .flex-col {
+        flex-direction: column;
+    }
+}
+
+ 
+
+/* Smart Screen */
+
+@media(max-width: 500px) {
+    .home-articles__submain {
+        grid-template-columns: 1fr;
+    }
+
+    .home-articles__recent-box img {
+        max-width: 100px
+    }
+
+    .showcase__content p {
+        max-width: 100%;
+    }
+
+}
